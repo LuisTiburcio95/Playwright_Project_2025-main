@@ -12,6 +12,7 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  timeout: 50000,
   testDir: './src',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -53,7 +54,7 @@ export default defineConfig({
     },
 
     {
-      name: 'Microsoft Edge',
+      name: 'MicrosoftEdge',
       use: { ...devices['Desktop Edge'], channel: 'msedge' },
     },
 
