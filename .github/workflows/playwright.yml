@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main, master ]
 schedule:
-    - cron: "* * * * *"   # Runs every minute    
+    - cron: "0 * * * *"   # Runs every 30 min   
 jobs:
   test:
     timeout-minutes: 60
@@ -19,7 +19,7 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: smokeplaywrightactionitem
+    - name: smokeplaywrightaction
       run: npm run smokeplaywrightactionitem
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
