@@ -17,7 +17,7 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: smokeplaywrightaction
+    - name: Smoke Playwright Action
       run: npm run smokeplaywrightactionitem
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}

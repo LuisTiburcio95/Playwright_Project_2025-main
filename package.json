@@ -17,7 +17,7 @@
     "reusabletest": "npx playwright test src/test/action_items/reusable_test.spec.ts --headed --workers=1 --project=chrome --reporter=html",
     "uspsactionitem": "npx playwright test src/test/action_items/usps_action_item.spec.ts --headed --workers=1 --project=chrome --reporter=html",
     "capitaloneactionitem": "npx playwright test src/test/action_items/capitalone_test.spec.ts --headed --workers=1 --project=chrome --reporter=html",
-    "smokeplaywrightactionitem": "npx playwright test --grep @ai src/test/*--workers=1 --project=chrome --reporter=html"
+    "smokeplaywrightactionitem": "npx playwright test --grep @ai src/test/* --workers=1 --project=chrome --reporter=html"
   },
   "keywords": [],
   "author": "",
